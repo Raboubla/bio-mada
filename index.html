@@ -4,54 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIO Mada - Sakafo natoraly, ara-pahasalamana</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
 </head>
 <body class="bg-clouds">
     <!-- Header -->
     <header class="site-header">
-        <nav class="main-nav" aria-label="Navigation principale">
-            <div class="container nav-inner">
-                <a href="index.html" class="logo" aria-label="BIO MADA - Accueil">BIO MADA</a>
+        <nav class="navbar navbar-expand-lg navbar-light main-nav" aria-label="Navigation principale">
+            <div class="container position-relative">
 
-                <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                <!-- LOGO à gauche -->
+                <a href="index.html" class="navbar-brand logo me-0" aria-label="BIO MADA - Accueil" style="color: #1F6F4A;">
+                    BIO MADA
+                </a>
+
+                <button class="navbar-toggler nav-toggle ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Ouvrir le menu">
                     <span class="nav-toggle-bar"></span>
                     <span class="nav-toggle-bar"></span>
                     <span class="nav-toggle-bar"></span>
                 </button>
 
-                <ul id="nav-menu" class="nav-links">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#a-propos">Qui sommes-nous</a></li>
-                    <li><a href="#produits">Produits / Sakafo</a></li>
-                    <li><a href="#traiteur">Service traiteur</a></li>
-                </ul>
+                <!-- CONTENU -->
+                <div class="collapse navbar-collapse" id="nav-menu">
 
-                <a class="btn btn-primary btn-bounce" href="#commande">Contactez-nous</a>
+                    <!-- MENU CENTRÉ -->
+                    <ul class="navbar-nav mx-auto nav-links text-center pt-2 pt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="a-propos.html">Qui sommes-nous</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produits.html">Produits / Sakafo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="traiteur.html">Service traiteur</a></li>
+                    </ul>
+
+                    <!-- BOUTON À DROITE -->
+                    <a class="btn-bounce btn btn-success ms-lg-auto mb-2 mb-lg-0" href="#contact">
+                        Contactez-nous
+                    </a>
+
+                </div>
             </div>
         </nav>
     </header>
+
 
     <main id="accueil">
         <section class="hero" aria-label="Présentation BIO MADA">
             <div class="container hero-inner">
                 <div class="hero-media hero-media-left">
-                    <img src="img/WhatsApp%20Image%202026-01-17%20at%2016.38.25.jpeg" alt="Assiette saine BIO MADA">
+                    <img class="img-fluid" src="img/WhatsApp%20Image%202026-01-17%20at%2016.38.25.jpeg" alt="Assiette saine BIO MADA">
                 </div>
 
                 <div class="hero-content">
-                    <h1 class="hero-title">BIO MADA</h1>
+                    <h1 class="hero-title" style="padding-top: 40px; padding-bottom: 40px;">BIO MADA</h1>
                     <p class="hero-subtitle">Sakafo natoraly • Sakafo ara-pahasalamana • Kalitao premium vita gasy</p>
-                    <p>Produits alimentaires naturels, service traiteur santé, élaborés à partir de produits locaux de Madagascar, pour bien manger au quotidien et lors de vos événements.</p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="#commande">Apprenez-en plus </a>
+                        <a class="btn btn-success" href="#bio-presentation">Apprenez-en plus   
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="hero-media hero-media-right">
-                    <img src="img/WhatsApp%20Image%202026-01-17%20at%2016.38.30.jpeg" alt="Produits et plats BIO MADA">
+                    <img class="img-fluid" src="img/WhatsApp%20Image%202026-01-17%20at%2016.38.30.jpeg" alt="Produits et plats BIO MADA">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" aria-label="BIO MADA - Présentation" id="bio-presentation">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-12 col-lg-7">
+                        <div class="bio-kicker reveal reveal-left" style="color: #1F6F4A;">BIO MADA</div>
+                        <h2 class="bio-headline reveal reveal-left">BIO MADA – Du terroir à l’assiette santé</h2>
+                        <p class="bio-subheadline reveal reveal-left">Solutions santé dans l’assiette • Vita gasy premium</p>
+                        <p class="reveal reveal-left">BIO MADA Sakafo propose des produits alimentaires naturels et un service traiteur santé, élaborés à partir de produits locaux de Madagascar, pour bien manger au quotidien et lors de vos événements.</p>
+                        <p class="reveal reveal-left mb-4"><strong>👉 <span style="color: #1F6F4A;">Mihinàna tsara. Mihinàna ara-pahasalamana. Mihinàna BIO MADA.</span></strong></p>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="bio-image-wrap reveal reveal-right">
+                            <img class="img-fluid rounded-3 shadow" src="img/nousSommes/landscape-with-colorful-rainbow-appearing-sky.jpg" alt="BIO MADA - Du terroir à l'assiette">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" aria-label="BIO MADA - Notre objectif">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="h2 mb-2 reveal" style="color: #1F6F4A;">Notre objectif</h2>
+                    </div>
+                </div>
+
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-12 col-lg-5 d-flex justify-content-center">
+                        <div class="objectifs-diagonal">
+                            <img class="img-fluid rounded-1 shadow reveal reveal-left" src="img/objectifs/WhatsApp%20Image%202026-01-17%20at%2016.38.33.jpeg" alt="Objectif BIO MADA">
+                            <img class="img-fluid rounded-1 shadow reveal reveal-left" src="img/objectifs/WhatsApp%20Image%202026-01-17%20at%2016.38.34.jpeg" alt="Savoir-faire malagasy">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-7">
+                        <h3 class="objectif-headline reveal reveal-right mb-3">Nous vous proposons des <span style="color: #1F6F4A;">Sakafo matsiro • ara-pahasalamana • kalitao</span></h3>
+                        <div class="objectif-block reveal reveal-right">
+                            <p class="mb-0"><span class="objectif-label">Notre objectif est clair :</span> offrir des sakafo matsiro, ara-pahasalamana, qui mettent en valeur le savoir-faire malagasy tout en répondant aux standards de qualité actuels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" aria-label="BIO MADA Sakafo - Services">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="h2 mb-2 reveal" style="color: #1F6F4A;">Nos services</h2>
+                        <p class="mb-0 text-muted reveal">Des produits naturels et locaux, transformés en nourriture saine et premium.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-12 col-lg-7">
+                        <div class="pe-lg-4">
+                            <h3 class="h3 mb-3 reveal reveal-left" style="color: #1F6F4A;">BIO MADA Sakafo</h3>
+                            <p class="mb-3 reveal reveal-left">BIO MADA est une initiative dédiée à la valorisation et la commercialisation de produits naturels et locaux de Madagascar, avec une approche allant de la matière première à la transformation en aliments finis.</p>
+                            <p class="mb-3 reveal reveal-left">À travers  <label for="" style="color: #1F6F4A;">BIO MADA Sakafo</label>, nous proposons des sakafo vita malagasy miavaka :</p>
+
+                            <div class="services-points mt-4">
+                                <div class="service-point reveal reveal-left">😊 élaborés à partir de produits naturels et locaux</div>
+                                <div class="service-point reveal reveal-left">🍽️ transformés en nourriture saine, équilibrée et gourmande</div>
+                                <div class="service-point reveal reveal-left">✨ avec un positionnement vita gasy premium</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5 d-flex justify-content-center">
+                        <div class="services-diagonal">
+                            <img class="img-fluid rounded-1 shadow reveal reveal-right" src="img/services/riz-noir.jpg" alt="Plat BIO MADA - riz noir">
+                            <img class="img-fluid rounded-1 shadow reveal reveal-right" src="img/services/WhatsApp%20Image%202026-01-17%20at%2016.38.27.jpeg" alt="Préparation BIO MADA">
+                            
+                            <img class="img-fluid rounded-1 shadow reveal reveal-right" src="img/services/shutterstock-1442510024.jpg" alt="Produits locaux BIO MADA">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,24 +169,32 @@
     <footer class="site-footer" id="contact" aria-label="Pied de page">
         <div class="container footer-inner">
             <div class="footer-main">
-                <h2 class="footer-title">Bio Mada original</h2>
+                <h2 class="footer-title">Original Bio Mada</h2>
+                <div class="footer-links-grid">
+                    <div class="footer-link-item">
+                        <i class="fa fa-phone"></i>
+                        <a href="">+261 34 68 836 84</a>
+                    </div>
 
-                <div class="footer-cta">
-                    <a class="footer-pill footer-pill-dark" href="mailto:contact@biomada.mg">contact@biomada.mg</a>
-                    <a class="footer-pill footer-pill-primary" href="#commande">Commander / WhatsApp</a>
+                    <div class="footer-link-item">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:biomada8@gmail.com">biomada8@gmail.com</a>
+                    </div>
+
+                    <div class="footer-link-item">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="https://www.facebook.com/profile.php?id=61576735627680" target="_blank" rel="noopener">Bio Mada</a>
+                    </div>
                 </div>
-
-                
             </div>
 
             <div class="footer-links" aria-label="Accès rapide">
                 <h3 class="footer-links-title">Accès rapide</h3>
                 <div class="footer-links-grid">
-                    <a href="#accueil">Accueil</a>
-                    <a href="#a-propos">Qui sommes-nous ?</a>
-                    <a href="#produits">Produits / Sakafo</a>
-                    <a href="#traiteur">Service traiteur</a>
-                    
+                    <a href="index.html">Accueil</a>
+                    <a href="a-propos.html">Qui sommes-nous ?</a>
+                    <a href="produits.html">Produits / Sakafo</a>
+                    <a href="traiteur.html">Service traiteur</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
@@ -97,19 +213,7 @@
         </script>
     </footer>
 
-    <script>
-        (function () {
-            var nav = document.querySelector('.main-nav');
-            var toggle = document.querySelector('.nav-toggle');
-
-            if (!nav || !toggle) return;
-
-            toggle.addEventListener('click', function () {
-                var isOpen = nav.classList.toggle('is-open');
-                toggle.setAttribute('aria-expanded', String(isOpen));
-            });
-        })();
-    </script>
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         (function () {
@@ -122,6 +226,22 @@
 
             onScroll();
             window.addEventListener('scroll', onScroll, { passive: true });
+        })();
+
+        (function () {
+            var items = document.querySelectorAll('.reveal');
+            if (!items.length) return;
+
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.18, rootMargin: '0px 0px -10% 0px' });
+
+            items.forEach(function (el) { io.observe(el); });
         })();
     </script>
 </body>

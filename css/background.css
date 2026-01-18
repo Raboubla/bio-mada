@@ -16,7 +16,7 @@ body.bg-clouds::before {
     inset: -20vmax;
     z-index: 0;
     pointer-events: none;
-    mix-blend-mode: screen;
+    mix-blend-mode: normal;
     background:
         radial-gradient(closest-side at 50% 12%, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0) 62%),
         radial-gradient(closest-side at 50% 18%, rgba(20, 225, 129, 0.74), rgba(31, 111, 74, 0) 66%),
@@ -24,7 +24,7 @@ body.bg-clouds::before {
         radial-gradient(closest-side at 18% 58%, rgba(31, 111, 74, 0.42), rgba(31, 111, 74, 0) 66%),
         radial-gradient(closest-side at 22% 84%, rgba(31, 111, 74, 0.28), rgba(31, 111, 74, 0) 62%),
         radial-gradient(closest-side at 30% 42%, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0) 60%);
-    filter: blur(62px) brightness(1.05);
+    filter: blur(62px) brightness(1.15) contrast(1.08);
     opacity: 0.72;
     transform: translate3d(0, 0, 0);
     animation: cloudsPulse 4.8s ease-in-out infinite;
@@ -36,31 +36,31 @@ body.bg-clouds::after {
     inset: -20vmax;
     z-index: 0;
     pointer-events: none;
-    mix-blend-mode: screen;
+    mix-blend-mode: normal;
     background:
         radial-gradient(closest-side at 88% 30%, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0) 64%),
         radial-gradient(closest-side at 82% 58%, rgba(31, 111, 74, 0.42), rgba(31, 111, 74, 0) 66%),
         radial-gradient(closest-side at 78% 84%, rgba(31, 111, 74, 0.28), rgba(31, 111, 74, 0) 62%),
         radial-gradient(closest-side at 70% 42%, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0) 60%);
-    filter: blur(62px) brightness(1.05);
+    filter: blur(62px) brightness(1.15) contrast(1.08);
     opacity: 0.72;
     animation: cloudsPulse 5.6s ease-in-out infinite reverse;
 }
 
 @keyframes cloudsPulse {
     0% {
-        opacity: 0.35;
+        opacity: 0.22;
         transform: scale(1) translate3d(0, 0, 0);
-        filter: blur(60px) brightness(0.85);
+        filter: blur(60px) brightness(0.95) contrast(1.04);
     }
     50% {
-        opacity: 0.98;
+        opacity: 0.78;
         transform: scale(1.06) translate3d(0, -1.4vmax, 0);
-        filter: blur(60px) brightness(1.25);
+        filter: blur(60px) brightness(1.30) contrast(1.10);
     }
     100% {
-        opacity: 0.35;
+        opacity: 0.22;
         transform: scale(1) translate3d(0, 0, 0);
-        filter: blur(60px) brightness(0.85);
+        filter: blur(60px) brightness(0.95) contrast(1.04);
     }
 }
