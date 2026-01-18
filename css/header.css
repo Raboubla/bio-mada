@@ -1,0 +1,156 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+ .main-nav {
+     background: transparent;
+     transition: background-color 220ms ease, box-shadow 220ms ease, border-color 220ms ease, backdrop-filter 220ms ease;
+ }
+
+ .site-header.is-scrolled .main-nav {
+     background: rgba(245, 241, 234, 0.88);
+     backdrop-filter: blur(14px);
+
+
+ }
+
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--vert-profond);
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--gris-fonce);
+    padding: 10px 10px;
+    border-radius: 999px;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+.nav-links a:hover {
+    background: rgba(31, 111, 74, 0.10);
+    color: var(--vert-profond);
+}
+
+.nav-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid rgba(46, 46, 46, 0.12);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 61;
+}
+
+.nav-toggle-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: var(--vert-profond);
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 920px) {
+    .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 72px;
+        z-index: 60;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        padding: 12px;
+        background: rgba(245, 241, 234, 0.88);
+        backdrop-filter: blur(14px);
+        border: 1px solid rgba(46, 46, 46, 0.10);
+        border-radius: 16px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+    }
+
+    .nav-links a {
+        border-radius: 12px;
+    }
+
+    .main-nav.is-open .nav-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 520px) {
+    .nav-inner {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        left: 12px;
+        right: 12px;
+        top: 68px;
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-4px); /* monte légèrement */
+    }
+    50% {
+        transform: translateY(2px);  /* redescend un peu en dessous */
+    }
+    75% {
+        transform: translateY(-2px); /* petit rebond */
+    }
+}
+
+.btn-bounce {
+    animation: bounce 0.7s ease-in-out infinite;
+    display: inline-block; /* pour que transform fonctionne bien */
+    will-change: transform;
+}
+
+
+

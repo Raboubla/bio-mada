@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO Mada - Sakafo natoraly, ara-pahasalamana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body class="bg-clouds">
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Navigation principale">
+            <div class="container nav-inner">
+                <a href="index.html" class="logo" aria-label="BIO MADA - Accueil">BIO MADA</a>
+
+                <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <ul id="nav-menu" class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">Qui sommes-nous</a></li>
+                    <li><a href="#produits">Produits / Sakafo</a></li>
+                    <li><a href="#traiteur">Service traiteur</a></li>
+                </ul>
+
+                <a class="btn btn-primary btn-bounce" href="#commande">Contactez-nous</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="accueil">
+        <section class="hero" aria-label="Présentation BIO MADA">
+            <div class="container hero-inner">
+                <div class="hero-media hero-media-left">
+                    <img src="img/WhatsApp%20Image%202026-01-17%20at%2016.38.25.jpeg" alt="Assiette saine BIO MADA">
+                </div>
+
+                <div class="hero-content">
+                    <h1 class="hero-title">BIO MADA</h1>
+                    <p class="hero-subtitle">Sakafo natoraly • Sakafo ara-pahasalamana • Kalitao premium vita gasy</p>
+                    <p>Produits alimentaires naturels, service traiteur santé, élaborés à partir de produits locaux de Madagascar, pour bien manger au quotidien et lors de vos événements.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#commande">Apprenez-en plus </a>
+                    </div>
+                </div>
+
+                <div class="hero-media hero-media-right">
+                    <img src="img/WhatsApp%20Image%202026-01-17%20at%2016.38.30.jpeg" alt="Produits et plats BIO MADA">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact" aria-label="Pied de page">
+        <div class="container footer-inner">
+            <div class="footer-main">
+                <h2 class="footer-title">Bio Mada original</h2>
+
+                <div class="footer-cta">
+                    <a class="footer-pill footer-pill-dark" href="mailto:contact@biomada.mg">contact@biomada.mg</a>
+                    <a class="footer-pill footer-pill-primary" href="#commande">Commander / WhatsApp</a>
+                </div>
+
+                
+            </div>
+
+            <div class="footer-links" aria-label="Accès rapide">
+                <h3 class="footer-links-title">Accès rapide</h3>
+                <div class="footer-links-grid">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#a-propos">Qui sommes-nous ?</a>
+                    <a href="#produits">Produits / Sakafo</a>
+                    <a href="#traiteur">Service traiteur</a>
+                    
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>&copy; <span id="year"></span> BIO MADA. Tous droits réservés.</span>
+            <span class="footer-badges">100% naturel • Vita gasy premium</span>
+        </div>
+
+        <script>
+            (function () {
+                var y = document.getElementById('year');
+                if (y) y.textContent = String(new Date().getFullYear());
+            })();
+        </script>
+    </footer>
+
+    <script>
+        (function () {
+            var nav = document.querySelector('.main-nav');
+            var toggle = document.querySelector('.nav-toggle');
+
+            if (!nav || !toggle) return;
+
+            toggle.addEventListener('click', function () {
+                var isOpen = nav.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var header = document.querySelector('.site-header');
+            if (!header) return;
+
+            function onScroll() {
+                header.classList.toggle('is-scrolled', window.scrollY > 8);
+            }
+
+            onScroll();
+            window.addEventListener('scroll', onScroll, { passive: true });
+        })();
+    </script>
+</body>
+</html>

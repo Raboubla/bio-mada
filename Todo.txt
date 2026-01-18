@@ -1,0 +1,21 @@
+Dans le site vitrine :
+ Presentation : petite question comme = Recette incroyable et original ?
+ A propos de BIO MADA :
+    - client satisfaite 
+    - produit original
+    - nos service (Patisserie , boulangerie, ...)
+ A propos de tatie Malala :
+    - Chef experimente
+    - 2 ans experiance Nosy Be
+    - CEO de BIO MADA
+ Contacte : 
+    - Whats app / facebook / Insta
+    - adresse mail 
+    - Lieu de vente
+ 6. Palette couleurs (à appliquer partout)
+    ☐ Vert principal : #1F6F4A
+    ☐ Beige fond : #F5F1EA
+    ☐ Marron cacao : #6B4F3F
+    ☐ Or doux : #D4A94E
+    ☐ Gris texte : #2E2E2E
+    ☐ Blanc : #FFFFFF
