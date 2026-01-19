@@ -48,11 +48,17 @@
         </nav>
     </header>
 
+    <div class="produits-top-banner" aria-hidden="true"></div>
+
     <main id="produits">
         <section class="py-5" aria-label="Top créations BIO MADA">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col-12 text-center">
+                        <div class="products-kicker reveal" style="color: #1F6F4A;">
+                            <i class="fa-solid fa-bowl-food me-2" aria-hidden="true"></i>
+                            Produits / Sakafo
+                        </div>
                         <h1 class="h2 mb-2 reveal" style="color: #1F6F4A;">Top créations BIO MADA</h1>
                         <p class="mb-0 text-muted reveal">Découvrez 3 recettes signatures, saines et gourmandes.</p>
                     </div>
@@ -61,13 +67,16 @@
                 <div class="product-zigzag">
                     <div class="row align-items-center g-4 g-lg-5 product-item">
                         <div class="col-12 col-lg-5">
-                            <div class="product-image reveal reveal-left">
+                            <div class="product-image product-float product-float-1 reveal reveal-left">
                                 <img class="img-fluid rounded-3 shadow" src="img/top3/1.jpeg" alt="Cookies au riz noir BIO MADA">
                             </div>
                         </div>
                         <div class="col-12 col-lg-7">
                             <div class="product-card reveal reveal-right">
-                                <h2 class="h3 mb-2" style="color: #1F6F4A;">Cookies au riz noir</h2>
+                                <div class="product-badges mb-2">
+                                   <span class="badge rounded-pill text-bg-light"><i class="fa-solid fa-star me-1" aria-hidden="true"></i><label for="">Signature</label></span>
+                                </div>
+                                <h2 class="h3 mb-2 product-title" style="color: #1F6F4A;"><i class="fa-solid fa-cookie-bite me-2" aria-hidden="true"></i>Cookies au riz noir</h2>
                                 <p class="mb-0">Des cookies originaux à base de riz noir, riches en goût et en caractère. Une alternative gourmande, pensée pour allier plaisir et équilibre avec des ingrédients locaux soigneusement sélectionnés.</p>
                             </div>
                         </div>
@@ -75,13 +84,16 @@
 
                     <div class="row align-items-center g-4 g-lg-5 product-item">
                         <div class="col-12 col-lg-5 order-lg-2">
-                            <div class="product-image reveal reveal-right">
+                            <div class="product-image product-float product-float-2 reveal reveal-right">
                                 <img class="img-fluid rounded-3 shadow" src="img/top3/2.jpeg" alt="Bûches au riz noir et haricot noir BIO MADA">
                             </div>
                         </div>
                         <div class="col-12 col-lg-7 order-lg-1">
                             <div class="product-card reveal reveal-left">
-                                <h2 class="h3 mb-2" style="color: #1F6F4A;">Bûches au riz noir & haricot noir</h2>
+                                <div class="product-badges mb-2">
+                                    <span class="badge rounded-pill text-bg-light"><i class="fa-solid fa-bolt me-1" aria-hidden="true"></i>Satiété</span>
+                                </div>
+                                <h2 class="h3 mb-2 product-title" style="color: #1F6F4A;"><i class="fa-solid fa-cubes-stacked me-2" aria-hidden="true"></i>Bûches au riz noir & haricot noir</h2>
                                 <p class="mb-0">Une création généreuse qui marie riz noir et haricot noir pour un résultat à la fois nourrissant et savoureux. Idéal pour une pause saine, avec une bonne sensation de satiété.</p>
                             </div>
                         </div>
@@ -89,13 +101,16 @@
 
                     <div class="row align-items-center g-4 g-lg-5 product-item">
                         <div class="col-12 col-lg-5">
-                            <div class="product-image reveal reveal-left">
+                            <div class="product-image product-float product-float-3 reveal reveal-left">
                                 <img class="img-fluid rounded-3 shadow" src="img/top3/3.jpeg" alt="Pudding malagasy au riz noir BIO MADA">
                             </div>
                         </div>
                         <div class="col-12 col-lg-7">
                             <div class="product-card reveal reveal-right">
-                                <h2 class="h3 mb-2" style="color: #1F6F4A;">Pudding malagasy au riz noir</h2>
+                                <div class="product-badges mb-2">
+                                   <span class="badge rounded-pill text-bg-light"><i class="fa-solid fa-mug-hot me-1" aria-hidden="true"></i>Dessert</span>
+                                </div>
+                                <h2 class="h3 mb-2 product-title" style="color: #1F6F4A;"><i class="fa-solid fa-bowl-rice me-2" aria-hidden="true"></i>Pudding malagasy au riz noir</h2>
                                 <p class="mb-0">Un pudding inspiré du savoir-faire malagasy, revisité avec du riz noir. Texture fondante, goût délicat, parfait pour un dessert ou un goûter qui respecte une alimentation plus saine.</p>
                             </div>
                         </div>
@@ -112,17 +127,17 @@
                 <div class="footer-links-grid">
                     <div class="footer-link-item">
                         <i class="fa fa-phone"></i>
-                        <a href="">+261 34 68 836 84</a>
+                        <a id="contact-phone" class="contact-underline" href="">+261 34 68 836 84</a>
                     </div>
 
                     <div class="footer-link-item">
                         <i class="fa fa-envelope"></i>
-                        <a href="mailto:biomada8@gmail.com">biomada8@gmail.com</a>
+                        <a id="contact-email" class="contact-underline" href="mailto:biomada8@gmail.com">biomada8@gmail.com</a>
                     </div>
 
                     <div class="footer-link-item">
                         <i class="fa-brands fa-facebook"></i>
-                        <a href="https://www.facebook.com/profile.php?id=61576735627680" target="_blank" rel="noopener">Bio Mada</a>
+                        <a id="contact-facebook" class="contact-underline" href="https://www.facebook.com/profile.php?id=61576735627680" target="_blank" rel="noopener">Bio Mada</a>
                     </div>
                 </div>
             </div>
@@ -180,6 +195,34 @@
             }, { threshold: 0.18, rootMargin: '0px 0px -10% 0px' });
 
             items.forEach(function (el) { io.observe(el); });
+        })();
+
+                (function () {
+            function flashContacts() {
+                var nodes = [
+                    document.getElementById('contact-phone'),
+                    document.getElementById('contact-email'),
+                    document.getElementById('contact-facebook')
+                ].filter(Boolean);
+
+                if (!nodes.length) return;
+
+                nodes.forEach(function (n) { n.classList.add('contact-flash'); });
+
+                setTimeout(function () {
+                    nodes.forEach(function (n) { n.classList.remove('contact-flash'); });
+                }, 2000);
+            }
+
+            document.addEventListener('click', function (e) {
+                var a = e.target.closest('a[href="#contact"]');
+                if (!a) return;
+                setTimeout(flashContacts, 300);
+            });
+
+            if (window.location.hash === '#contact') {
+                setTimeout(flashContacts, 400);
+            }
         })();
     </script>
 </body>

@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="hero-content">
-                    <h1 class="hero-title" style="padding-top: 40px; padding-bottom: 40px;">BIO MADA</h1>
+                    <h1 class="hero-title">BIO MADA</h1>
                     <p class="hero-subtitle">Sakafo natoraly • Sakafo ara-pahasalamana • Kalitao premium vita gasy</p>
                     <div class="hero-actions">
                         <a class="btn btn-success" href="#bio-presentation">Apprenez-en plus   
@@ -173,17 +173,17 @@
                 <div class="footer-links-grid">
                     <div class="footer-link-item">
                         <i class="fa fa-phone"></i>
-                        <a href="">+261 34 68 836 84</a>
+                        <a id="contact-phone" class="contact-underline" href="">+261 34 68 836 84</a>
                     </div>
 
                     <div class="footer-link-item">
                         <i class="fa fa-envelope"></i>
-                        <a href="mailto:biomada8@gmail.com">biomada8@gmail.com</a>
+                        <a id="contact-email" class="contact-underline" href="mailto:biomada8@gmail.com">biomada8@gmail.com</a>
                     </div>
 
                     <div class="footer-link-item">
                         <i class="fa-brands fa-facebook"></i>
-                        <a href="https://www.facebook.com/profile.php?id=61576735627680" target="_blank" rel="noopener">Bio Mada</a>
+                        <a id="contact-facebook" class="contact-underline" href="https://www.facebook.com/profile.php?id=61576735627680" target="_blank" rel="noopener">Bio Mada</a>
                     </div>
                 </div>
             </div>
@@ -242,6 +242,35 @@
 
             items.forEach(function (el) { io.observe(el); });
         })();
+
+        (function () {
+            function flashContacts() {
+                var nodes = [
+                    document.getElementById('contact-phone'),
+                    document.getElementById('contact-email'),
+                    document.getElementById('contact-facebook')
+                ].filter(Boolean);
+
+                if (!nodes.length) return;
+
+                nodes.forEach(function (n) { n.classList.add('contact-flash'); });
+
+                setTimeout(function () {
+                    nodes.forEach(function (n) { n.classList.remove('contact-flash'); });
+                }, 2000);
+            }
+
+            document.addEventListener('click', function (e) {
+                var a = e.target.closest('a[href="#contact"]');
+                if (!a) return;
+                setTimeout(flashContacts, 300);
+            });
+
+            if (window.location.hash === '#contact') {
+                setTimeout(flashContacts, 400);
+            }
+        })();
+
     </script>
 </body>
 </html>
