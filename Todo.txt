@@ -19,3 +19,33 @@ Dans le site vitrine :
     ☐ Or doux : #D4A94E
     ☐ Gris texte : #2E2E2E
     ☐ Blanc : #FFFFFF
+
+-----------------------------------------------------------------------
+
+correxion :
+- (oublie) bouton contacter nous va avec modal de :
+   - nom
+   - email
+   - message
+   - bouton envoyer
+- nouvelle page de : travaillons ensemble :
+   ✔️ Préparation de plats BIO sur site (espaces professionnels, entreprises)
+   ✔️ Intervention lors d’événements (foires, salons, cérémonies, animations culinaires)
+   ✔️ Adaptation selon le lieu, le public et les besoins
+   ✔️ Contactez-nous pour organiser votre collaboration
+- dans qui nous sommes :
+   - havahana kely ny bio mada sy bio mada sakafo
+      - bio mada : a la fois producteurs et fournisseurs de produit locaux madagascar
+      - bio mada sakafo : derive de bio mada, qui produit des sakafo via les produit de bio mada
+   - asina experience anatin'ny profil du fondatrice
+      - annee d'experience 
+      - isa produit vita
+      - isa collaboration 
+      - petite histoire
+- dans top produits :
+   - asina ingredients miaraka amin'ny produit presentena
+   - soloina ilay produit fantelony
+- ajout de quatrieme page : travailler avec moi
+- integration de google map du lieu de travail
+- ecran de chargement sur tout les pages
+- multi image sur les banner (3)

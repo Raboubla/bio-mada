@@ -6,7 +6,7 @@
 .apropos-top-banner {
     height: clamp(160px, 22vw, 320px);
     width: 100%;
-    background-image: url('../img/fond/fond.jpg');
+    background-image: url('../img/fond/bannerApropos/fond.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,11 +88,166 @@
     color: var(--vert-profond);
 }
 
+.brand-split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.brand-split-card {
+    padding: 22px 20px;
+    border-radius: 18px;
+    background: var(--about-card-bg);
+    border: 1px solid var(--about-border);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.10);
+}
+
+.brand-split-kicker {
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.92;
+    margin-bottom: 10px;
+}
+
+.brand-split-title {
+    font-weight: 900;
+    margin: 0 0 10px;
+    letter-spacing: 0.1px;
+}
+
+.founder-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.founder-metric {
+    position: relative;
+    border-radius: 18px;
+    padding: 16px 14px 14px;
+    background: linear-gradient(180deg, rgba(31, 111, 74, 0.10), rgba(245, 241, 234, 0.42));
+    border: 1px solid rgba(31, 111, 74, 0.18);
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.metric-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(31, 111, 74, 0.92);
+    font-size: 18px;
+}
+
+.metric-value {
+    font-weight: 900;
+    font-size: clamp(42px, 4vw, 62px);
+    line-height: 0.95;
+    color: var(--vert-profond);
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.metric-label {
+    font-weight: 700;
+    color: rgba(46, 46, 46, 0.88);
+    font-size: 14px;
+}
+
+.media-carousel {
+    border-radius: 16px;
+}
+
+.media-carousel .carousel-inner {
+    border-radius: 16px;
+}
+
+.media-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 2px;
+}
+
+.media-tile {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(31, 111, 74, 0.14);
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.10);
+}
+
+.media-tile img {
+    width: 100%;
+    height: clamp(110px, 12vw, 160px);
+    object-fit: cover;
+    display: block;
+    transition: transform 260ms ease, filter 260ms ease;
+}
+
+.media-tile:hover img {
+    transform: scale(1.03);
+    filter: saturate(1.05);
+}
+
+.media-carousel .carousel-control-prev,
+.media-carousel .carousel-control-next {
+    width: 44px;
+}
+
+.media-carousel .carousel-control-prev-icon,
+.media-carousel .carousel-control-next-icon {
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.35));
+}
+
+.founder-gallery {
+    width: min(360px, 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.founder-gallery img {
+    border-radius: 14px;
+    width: 100%;
+    height: 96px;
+    object-fit: cover;
+    border: 1px solid rgba(31, 111, 74, 0.14);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
 @media (max-width: 991.98px) {
     .about-card {
         margin-top: 8px;
     }
+
+    .brand-split-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .media-row {
+        grid-template-columns: 1fr;
+    }
+
+    .media-tile img {
+        height: 220px;
+    }
+
+    .founder-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-gallery img {
+        height: 200px;
+    }
 }
+
 /* Base (éléments contact) */
 .contact-underline {
     position: relative;

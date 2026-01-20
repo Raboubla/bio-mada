@@ -178,6 +178,10 @@ body {
      .hero-media-right {
          aspect-ratio: 4 / 3;
      }
+
+     .hero-media img {
+         height: clamp(180px, 44vw, 260px);
+     }
  }
  
  /* Services et objectifs */
@@ -225,6 +229,13 @@ body {
      margin: 0 auto;
  }
 
+ .objectifs-diagonal img {
+     width: 100%;
+     height: auto;
+     max-height: 260px;
+     object-fit: cover;
+ }
+
  .objectifs-diagonal img:nth-child(1) {
      transform: translateX(-18px) rotate(-2deg);
  }
@@ -247,6 +258,13 @@ body {
     width: min(560px, 100%);
     margin: 0 auto;
     max-width: 100%;       /* s’adapte à son parent */
+}
+
+.services-diagonal img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
 }
 
 /* première image → droite */
