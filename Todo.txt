@@ -49,3 +49,20 @@ correxion :
 - integration de google map du lieu de travail
 - ecran de chargement sur tout les pages
 - multi image sur les banner (3)
+
+correction :
+- 22/01/2026
+   - ok Fond bio mada dans logo accueil
+   - ok eo am accueil : Une alimentation naturelle et saine, de qualité premium, fièrement malgache
+      - ok Pour bien manger et vivre sainement, choisissez BIO MADA
+      - ok Notre objectif : des plats savoureux, sains et de qualité, issus du savoir-faire BIO MADA.
+      - ok A travers BIO MADA Sakafo, découvrez des plats malagasy uniques, alliant tradition, qualité et savoir-faire local.
+      - soloina ny sary amle objectif
+   - ok tsy mety banner pour qui sommes nous : sary tatie manao kaly
+   - logo kely bio mada et bio mada sakafo
+   - ok fondatrice bio mada atao nom complet
+   - travaillons ensemple, ampiana sary en banner 
+
+sary accueil atao hita tsara
+logo
+banner dans travaillons ensemble
