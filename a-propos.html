@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/a-propos.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -321,6 +322,7 @@
                             href="https://www.facebook.com/profile.php?id=61576735627680" target="_blank"
                             rel="noopener">Bio Mada</a>
                     </div>
+
                 </div>
             </div>
 
@@ -408,6 +410,61 @@
             }
         })();
     </script>
+
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div class="whatsapp-tooltip">
+            <div class="whatsapp-tooltip-text">
+                <div>Discutons ensemble</div>
+            </div>
+            <button class="whatsapp-btn" aria-label="Ouvrir WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </button>
+        </div>
+
+        <div class="whatsapp-chat-box">
+            <div class="chat-header">
+                <div class="chat-header-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="chat-header-text">
+                    <div class="chat-title">Commencer une conversation</div>
+                    <div class="chat-subtitle">Le CEO répond généralement en quelques minutes.</div>
+                </div>
+                <button class="chat-close" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="chat-body">
+                <a href="https://wa.me/261385957229" target="_blank" rel="noopener" class="chat-contact">
+                    <div class="contact-avatar">
+                        <img src="img/fondateur/WhatsApp Image 2026-01-17 at 16.38.35.jpeg" alt="BIO MADA">
+                        <div class="contact-status"></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">Malala ANDRIANARIVO</div>
+                        <div class="contact-role">CEO - BIO Mada</div>
+                    </div>
+                    <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const widget = document.getElementById('whatsapp-widget');
+            const btn = widget.querySelector('.whatsapp-btn');
+            const closeBtn = widget.querySelector('.chat-close');
+            const chatBox = widget.querySelector('.whatsapp-chat-box');
+
+            btn.addEventListener('click', function () {
+                widget.classList.toggle('is-open');
+            });
+
+            closeBtn.addEventListener('click', function () {
+                widget.classList.remove('is-open');
+            });
+        });
+    </script>
+
     <script src="js/pwa.js"></script>
 </body>
 
